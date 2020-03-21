@@ -17,5 +17,7 @@ class MyFirstTests(unittest.TestCase):
         self.assertEqual(add("10,27,11"), 48)
         self.assertEqual(add("1,4,9,16,25"), 55)
 
+        #self.assertEqual(add("1,2\n3"), 6)
+
 if __name__ == '__main__':
     unittest.main()

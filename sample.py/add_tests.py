@@ -20,6 +20,10 @@ class MyFirstTests(unittest.TestCase):
         self.assertEqual(add("3\n5\n7"), 15)
         self.assertEqual(add("1,2\n3"), 6)
 
+        self.assertEqual(add("1000,2"), 1002)
+        self.assertEqual(add("1001,2"), 2)
+        self.assertEqual(add("9000\n9\n2000,1"), 10)
+
 
 if __name__ == '__main__':
     unittest.main()

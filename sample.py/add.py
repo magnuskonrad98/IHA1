@@ -4,5 +4,8 @@ def add(numbers):
     elif "," not in numbers:
         return int(numbers)
     else:
-        num_a, num_b = numbers.split(",")
-        return int(num_a) + int(num_b)
+        num_list = numbers.split(",")
+        num_sum = 0
+        for num in num_list:
+            num_sum += int(num)
+        return num_sum

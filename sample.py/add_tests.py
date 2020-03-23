@@ -24,6 +24,8 @@ class MyFirstTests(unittest.TestCase):
         self.assertEqual(add("1001,2"), 2)
         self.assertEqual(add("9000\n9\n2000,1"), 10)
 
+        self.assertEqual(add("1,-2,4"), "Negatives not allowed:-2")
+
 
 if __name__ == '__main__':
     unittest.main()
